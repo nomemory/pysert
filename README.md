@@ -2,6 +2,8 @@
 
 A python script that can be used to generate arbitrary formatted data.
 
+For a more complex solution, please check [www.mockneat.com] - a Java library that does exactly what this script does, and much more.
+
 _(Note: Initially written the script around 2012, found it in the google code archives)._
 
 #How to
@@ -60,16 +62,32 @@ VALUES
 // (... and so on)  
 ```
 
-# Notes
+# Supported datasets
 
 The supported datasets you can use are: 
 
 * `RandomNumber`:
   - `"name"`: `<string value>`
-  - `"floating" : `"<boolean value>"`
-  - `"min"`: `"<integer value>"
-  - `"max": "<integer value>"``
+  - `"floating"` : `"<boolean value>"`
+  - `"min"`: `"<integer value>"`
+  - `"max"`: `"<integer value>"`
 * `LoremIpsum`:
   - `"name"` : `<string value>`
   - `"length"` : `"<integer value>"`
+* `PersonalName`:
+  - `"name"` : `<string value>`
+  - `"firstname"` : `"<boolean value>"`
+  - `"lastname"` : `"<boolean value>"`
+* `Sequence` :
+  - `"name"` : `<string value>`
+  - `"start"` : `"<integer value>"`
+  - `"increment"` : `"<integer value>"`
+  
+# Adding your own data set:
+
+All you have to do is to:
+1. Extend the class `AbstractDataSet`
+2. Override the method `def validation_list(self):` by including the properties of the DataSet - script will validate the input `xml` based on that.
+3. Overtide the method `def next_value(self):`. Here you define the "arbitrary" / "random" behavior of the data set.
+
 
