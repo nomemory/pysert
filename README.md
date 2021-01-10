@@ -2,7 +2,7 @@
 
 A python script that can be used to generate arbitrary formatted data.
 
-For a more complex solution, please check [www.mockneat.com] - a Java library that does exactly what this script does, and much more.
+For a more complex solution, please check www.mockneat.com - a Java library that does exactly what this script does, and much more.
 
 _(Note: Initially written the script around 2012, found it in the google code archives)._
 
