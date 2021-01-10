@@ -64,9 +64,12 @@ VALUES
 
 The supported datasets you can use are: 
 
-* `RandomNumber`: 
-  - `"name" : <string value>`
-  - ``"floating" : "<boolean value>"`
-  - `"min": "<integer value>"
-  - `"max": "<integer value>"`
+* `RandomNumber`:
+  - `"name"`: `<string value>`
+  - `"floating" : `"<boolean value>"`
+  - `"min"`: `"<integer value>"
+  - `"max": "<integer value>"``
+* `LoremIpsum`:
+  - `"name"` : `<string value>`
+  - `"length"` : `"<integer value>"`
 
