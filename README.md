@@ -6,7 +6,7 @@ For a more complex solution, please check www.mockneat.com - a Java library that
 
 _(Note: Initially written the script around 2012, found it in the google code archives)._
 
-#How to
+# Using the script
 
 To be used with `python3`:
 
